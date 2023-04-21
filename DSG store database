@@ -1,0 +1,8 @@
+create table gear (id integer primary key autoincrement, name text, quantity text, price integer, sold integer, type text);
+
+insert into gear values (1,"kylie", 49, 20, 3, "bibs");
+insert into gear values (2, "breanna", 22, 15, 2, "bibs");
+insert into gear values (3, "boots",100, 44, 20, "rubber");
+insert into gear values (4, "breanna", 20, 6, 6, "sweatshirt");
+SELECT * FROM gear order by price;
+select name, sold from gear where sold <15 
